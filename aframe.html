@@ -6,9 +6,10 @@
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
             <a-assets>
+                <a-asset-item id="custom-marker" src="assets/pattern-qr_1.patt"></a-asset-item>
                 <a-asset-item id="hat" src="assets/luffy hat/scene.gltf"></a-asset-item>
             </a-assets>
-            <a-marker preset="hiro">
+             <a-marker type="pattern" url="#custom-marker">
 <!--             <a-plane 
                 id="imagePlane" 
                 position="0 0 0" 
